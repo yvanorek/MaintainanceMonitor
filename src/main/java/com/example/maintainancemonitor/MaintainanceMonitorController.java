@@ -21,5 +21,12 @@ public class MaintainanceMonitorController {
         return message;
     }
 
+    @RequestMapping("/reset")
+    public String reset (){
+        message =defaultMessage;
+        return message;
+    }
+
+
 
 }

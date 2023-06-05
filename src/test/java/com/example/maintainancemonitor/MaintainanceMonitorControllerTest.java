@@ -38,5 +38,17 @@ class MaintainanceMonitorControllerTest {
         assertEquals("Message:"+ message, result);
     }
 
+    @Test
+    public void resetTest(){
+        //arrange
+        String message=messageController.defaultMessage;
+        //act
+        String result =messageController.reset();
+        //assert
+        assertEquals(message, result);
+    }
+
+
+
 
 }
