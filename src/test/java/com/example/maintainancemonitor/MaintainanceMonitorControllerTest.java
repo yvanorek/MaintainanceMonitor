@@ -25,7 +25,7 @@ class MaintainanceMonitorControllerTest {
         //act
         String result =messageController.change(message);
         //assert
-        assertEquals(message, result);
+        assertEquals("Message:"+ message, result);
     }
 
     @Test
@@ -35,7 +35,7 @@ class MaintainanceMonitorControllerTest {
         //act
         String result =messageController.change(message);
         //assert
-        assertEquals(message, result);
+        assertEquals("Message:"+ message, result);
     }
 
 
