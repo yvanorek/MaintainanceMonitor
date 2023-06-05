@@ -18,5 +18,25 @@ class MaintainanceMonitorControllerTest {
         assertEquals(message, result);
     }
 
+    @Test
+    public void changeTest1(){
+        //arrange
+        String message="hallo";
+        //act
+        String result =messageController.change(message);
+        //assert
+        assertEquals("Message:"+ message, result);
+    }
+
+    @Test
+    public void changeTest2(){
+        //arrange
+        String message="1234 ";
+        //act
+        String result =messageController.change(message);
+        //assert
+        assertEquals("Message:"+ message, result);
+    }
+
 
 }
